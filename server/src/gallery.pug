@@ -1,0 +1,34 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../public/styles/preloader.min.css")
+        link(rel="stylesheet", href="../public/styles/index.min.css")
+        title Список картин
+    body.loaded
+        .preloader
+            .preloader__row
+                .preloader__item
+                .preloader__item
+        main.main
+            .container 
+                h1.main__title.title Список всех картин
+                button.btn.main__btn Добавить картину
+                section.paintings
+                    .paintings__wrapper 
+                        //- .paintings__item
+                        //-     .paintings__content
+                        //-         img.paintings__img(src="./public/img/paintings/Mona.jpg", alt="Мона Лиза")
+                        //-     .paintings__text 
+                        //-         h3.paintings__name Мона Лиза
+                        //-         h4.paintings__author Леонардо да Винчи
+                        //-         p.paintings__discription 
+                        //-             | «Мона Лиза», «Джоконда» или «Портрет госпожи Лизы дель Джокондо» (Ritratto di Monna Lisa del Giocondo) – 
+                        //-             | самая известная картина Леонардо да Винчи и, возможно, самая известная картина в мире. 
+                        //-             | Больше пяти столетий Мона Лиза...
+            a.btn(href="/") В меню             
+
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+        script(src="../public/script/index.js") 

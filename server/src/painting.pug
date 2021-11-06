@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../public/styles/painting.min.css")
+        title Картина
+    body 
+        .container
+            main.main
+                h2.title Картина
+                .main__wrapper
+                    .main__img 
+                    //-     img(src="https://localhost:3000/public/img/paintings/LordSupper.jpg", alt="Мона Лиза")
+                    .forms
+                        form#painting__form
+                            .form
+                                //- .form__about
+                                //-     label.label Название картины
+                                //-         input.input#form__name(value = "Вечерня" name="name" type="text")
+                                //-     label.label Автор
+                                //-         input.input#form__author(value = "Автор" name="author" type="text")
+                                //-     label.label Описание
+                                //-         textarea.input.textarea#form__discription(name="discription", cols="30", rows="10")
+                                //-     label.label Ссылка на картинку
+                                //-         input.input#form__url(value="url" name="url")
+                                //- .form__auction
+                                //-     label.label Участие в аукционе
+                                //-         input.input#form__isInAuction(checked name="isInAuction")
+                                //-     label.label Минимальное количество шагов
+                                //-         input.input#form__minStep(value="3" name="minStep" type="number")
+                                //-     label.label Максимальное количество шагов
+                                //-         input.input#form__maxStep(value="7" name="maxStep" type="number")
+                            .buttons
+                                button.btn.btn__accept(type="submit") Сохранить изменения
+                                button.btn.btn__delete#btn__delete Удалить картину
+                        form#upload__form
+                            input#file(type="file" name="img")
+                            button.btn(type="submit") Загрузить картинку
+                a.btn.btn__return(href="/") Вернуться на главную
+
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+        script(src="../public/script/painting.js") 
